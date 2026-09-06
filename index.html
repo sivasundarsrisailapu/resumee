@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siva Sundar | Graphic Designer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+  <!-- Single Horizontal Floating Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <!-- Logo section -->
+      <a href="#home" class="brand-logo">
+        <div class="logo-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5.5" y="4" width="9" height="9" rx="1.5" transform="rotate(15 10 8.5)" fill="#161412"/>
+            <rect x="9.5" y="11" width="9" height="9" rx="1.5" transform="rotate(15 14 15.5)" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <span class="brand-name">Siva Sundar.</span>
+      </a>
+
+      <!-- Navigation links (Single Pill with SVG Icons & Animated Text Expansion) -->
+      <ul class="nav-links">
+        <li>
+          <a href="#home" class="nav-item active">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span class="nav-text">Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="nav-text">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="nav-text">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#journey" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            <span class="nav-text">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#awards" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span class="nav-text">Awards</span>
+          </a>
+        </li>
+        <li>
+          <a href="#tools" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            <span class="nav-text">Tools</span>
+          </a>
+        </li>
+        <li>
+          <a href="#socials" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            <span class="nav-text">Socials</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Action items -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <a href="#socials" class="btn-cta desktop-only-cta">Social Media</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-container">
+    <div class="hero-grid-wrapper">
+
+      <!-- Left Content Column -->
+      <div class="hero-left">
+        <div class="award-badge">
+          <span class="award-icon">★</span>
+          <span>Graphic Designer & Video Editor</span>
+        </div>
+
+        <h1 class="hero-heading">
+          Olá! I'm <span class="highlight-name">Siva Sundar<span class="sparkle">✨</span></span>
+        </h1>
+        <p class="hero-location">based in Visakhapatnam, India</p>
+
+        <!-- Mobile-only Bio Paragraph -->
+        <p class="mobile-bio-text">
+          Hi, I'm Siva Sundar Srisailapu. I'm a Graphic Designer & Video Editor. I enjoy creating visual designs, managing content, and turning ideas into impactful digital projects. Telugu Anime Database (TADB) is one of the projects I built while experimenting with modern design and digital tools.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-wrapper">
+          <span class="social-title">Connect With Me</span>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sivasundarsrisailapu/" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="mailto:sivasundarsrisailapu2000@gmail.com" class="social-btn" aria-label="Email">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rating & Reviews Component -->
+        <div class="ratings-card">
+          <div class="avatar-stack">
+            <div class="avatar-icon-circle avatar-bg-1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="avatar-icon-circle avatar-bg-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="avatar-icon-circle avatar-bg-3">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="avatar-icon-circle avatar-bg-4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+          </div>
+          <div class="ratings-text">
+            <span class="rating-highlight">1,000+ App Downloads</span>
+            <span class="rating-sub">Telugu Anime Database (TADB)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Profile Image & Badges Column -->
+      <div class="hero-right">
+        <div class="hire-me-stamp">
+          <svg class="spinning-text" viewBox="0 0 100 100" width="105" height="105">
+            <path id="circlePath" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+            <text font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="2.2">
+              <textPath href="#circlePath">
+                HIRE ME • HIRE ME • HIRE ME •
+              </textPath>
+            </text>
+          </svg>
+          <div class="stamp-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#161412" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-quote-box">
+          <span class="quote-mark">“</span>
+          <p>Visual art with emotion, color, and personality!</p>
+        </div>
+
+        <div class="portrait-wrapper">
+          <div class="arch-backdrop"></div>
+          <img src="asd.png" alt="Siva Sundar" class="portrait-img" />
+
+          <!-- Rotating Sudarshana Chakra style Halo ring behind head -->
+          <div class="icons-halo-ring">
+            <div class="tool-app-badge badge-pos-1" title="Photoshop">
+              <div class="app-icon ps-app">Ps</div>
+            </div>
+            <div class="tool-app-badge badge-pos-2" title="Illustrator">
+              <div class="app-icon ai-app">Ai</div>
+            </div>
+            <div class="tool-app-badge badge-pos-3" title="Premiere Pro">
+              <div class="app-icon pr-app">Pr</div>
+            </div>
+            <div class="tool-app-badge badge-pos-4" title="After Effects">
+              <div class="app-icon ae-app">Ae</div>
+            </div>
+            <div class="tool-app-badge badge-pos-5" title="Figma">
+              <div class="app-icon figma-app">
+                <svg width="18" height="18" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38H19V28.5Z" fill="#FF7262"/>
+                  <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                  <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#1ABCFE"/>
+                  <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                  <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+                </svg>
+              </div>
+            </div>
+            <div class="tool-app-badge badge-pos-6" title="Microsoft Office">
+              <div class="app-icon ms-app">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="9.5" height="9.5" fill="#F25022"/>
+                  <rect x="12.5" y="2" width="9.5" height="9.5" fill="#7FBA00"/>
+                  <rect x="2" y="12.5" width="9.5" height="9.5" fill="#00A4EF"/>
+                  <rect x="12.5" y="12.5" width="9.5" height="9.5" fill="#FFB900"/>
+                </svg>
+              </div>
+            </div>
+            <div class="tool-app-badge badge-pos-7" title="CapCut">
+              <div class="app-icon capcut-app">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 8l16 0M4 16l16 0" stroke="#FFFFFF"/>
+                  <path d="M9 4l6 16M15 4l-6 16" stroke="#00E5FF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-action-pill">
+            <a href="resume.html" target="_blank" class="action-portfolio">
+              Resume
+              <span class="arrow-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+            <a href="resume.html" target="_blank" class="action-hire">Download</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bottom Marquee Ticker -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Graphic Design</span> <span class="sparkle-star">✦</span>
+        <span>Video Editing</span> <span class="sparkle-star">✦</span>
+        <span>UI/UX Layouts</span> <span class="sparkle-star">✦</span>
+        <span>Web Design</span> <span class="sparkle-star">✦</span>
+        <span>Reels & Motion</span> <span class="sparkle-star">✦</span>
+        <span>Content Creation</span> <span class="sparkle-star">✦</span>
+        <span>Graphic Design</span> <span class="sparkle-star">✦</span>
+        <span>Video Editing</span> <span class="sparkle-star">✦</span>
+        <span>UI/UX Layouts</span> <span class="sparkle-star">✦</span>
+        <span>Web Design</span> <span class="sparkle-star">✦</span>
+        <span>Reels & Motion</span> <span class="sparkle-star">✦</span>
+        <span>Content Creation</span> <span class="sparkle-star">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Accordion Section -->
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <div class="services-header">
+        <div class="services-title-area">
+          <div class="services-subbadge">
+            <span class="badge-icon-dark"></span>
+            <span class="badge-icon-orange"></span>
+            <span>My Expertise</span>
+          </div>
+          <h2 class="services-heading">
+            How I Bring <span class="highlight-orange">Ideas to Life</span>
+          </h2>
+        </div>
+
+        <div class="services-actions">
+          <button class="nav-arrow-btn prev-service" aria-label="Previous service">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="nav-arrow-btn next-service" aria-label="Next service">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <a href="#contact" class="btn-all-services">
+            View All Skills
+            <span class="arrow-circle-black">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="services-accordion">
+        <div class="service-card" data-index="1">
+          <div class="card-arrow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <div class="card-num-badge">01.</div>
+          <h3 class="card-title">Graphic Design</h3>
+          <div class="card-content">
+            <div class="tag-group">
+              <span class="service-tag">Poster Design</span>
+              <span class="service-tag">YouTube Thumbnails</span>
+              <span class="service-tag">Photoshop Manipulation</span>
+            </div>
+            <p class="service-desc">Creating eye-catching poster designs and high-CTR YouTube thumbnails in Photoshop that grab attention instantly.</p>
+          </div>
+        </div>
+
+        <div class="service-card active" data-index="2">
+          <div class="card-arrow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <div class="card-num-badge">02.</div>
+          <h3 class="card-title">Web & UI/UX Design</h3>
+          <div class="card-content">
+            <div class="tag-group">
+              <span class="service-tag">Landing Pages</span>
+              <span class="service-tag">Website Pages</span>
+              <span class="service-tag">UI Interface Design</span>
+            </div>
+            <p class="service-desc">Crafting high-converting landing pages, full website pages, and clean visual interfaces focused on user experience.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="card-arrow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <div class="card-num-badge">03.</div>
+          <h3 class="card-title">Video Editing</h3>
+          <div class="card-content">
+            <div class="tag-group">
+              <span class="service-tag">Short-Form Reels</span>
+              <span class="service-tag">Timeline Editing</span>
+              <span class="service-tag">Audio Sync</span>
+              <span class="service-tag">Transitions & VFX</span>
+            </div>
+            <p class="service-desc">Editing high-energy promo reels, YouTube content, and social media videos with sound FX and trending transitions.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-index="4">
+          <div class="card-arrow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <div class="card-num-badge">04.</div>
+          <h3 class="card-title">Content Creation</h3>
+          <div class="card-content">
+            <div class="tag-group">
+              <span class="service-tag">Script Writing</span>
+              <span class="service-tag">Voiceover Sync</span>
+              <span class="service-tag">Digital Publishing</span>
+              <span class="service-tag">Anime Database (TADB)</span>
+            </div>
+            <p class="service-desc">Founder of Telugu Anime Database (TADB). Crafting compelling scripts, visual stories, and community content platforms.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-index="5">
+          <div class="card-arrow-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <div class="card-num-badge">05.</div>
+          <h3 class="card-title">Operations & Support</h3>
+          <div class="card-content">
+            <div class="tag-group">
+              <span class="service-tag">Quality Checking</span>
+              <span class="service-tag">Data Entry</span>
+              <span class="service-tag">Documentation</span>
+              <span class="service-tag">Process Operations</span>
+            </div>
+            <p class="service-desc">Proven background in process operations, quality control, data accuracy, and administrative documentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-dark-section">
+    <div class="about-container">
+      <div class="about-grid">
+        <div class="about-left-image-area">
+          <div class="orange-folder-card">
+            <div class="folder-backdrop"></div>
+            <img src="asd.png" alt="Siva Sundar" class="about-portrait-img" />
+          </div>
+
+          <!-- Clean Horizontal Skill Pills below image -->
+          <div class="about-skills-row">
+            <span class="about-tag tag-dark">Graphic Design</span>
+            <span class="about-tag tag-orange">Web Design</span>
+            <span class="about-tag tag-dark">Video Editing</span>
+            <span class="about-tag tag-dark">CapCut & Reels</span>
+            <span class="about-tag tag-dark">Photoshop UI</span>
+            <span class="about-tag tag-orange">TADB Creator</span>
+            <span class="about-tag tag-orange">Illustrator</span>
+          </div>
+        </div>
+
+        <div class="about-right-content">
+          <div class="services-subbadge subbadge-light">
+            <span class="badge-icon-dark"></span>
+            <span class="badge-icon-orange"></span>
+            <span>About Me</span>
+          </div>
+
+          <h2 class="about-heading">
+            Who is <span class="highlight-orange">Siva Sundar?</span>
+          </h2>
+
+          <p class="about-text-p">
+            Hey there, I'm Siva Sundar Srisailapu — a Graphic Designer and Video Editor living in Visakhapatnam, India. I'm passionate about designing clean website layouts using Figma and AI tools. My biggest self-driven project is <strong>Telugu Anime Database (TADB)</strong>, where I created and manage the website, app, and Instagram community page.
+          </p>
+
+          <div class="about-signature-wrapper">
+            <span class="handwritten-signature">Siva Sundar</span>
+          </div>
+
+          <div class="about-action-area">
+            <a href="https://www.linkedin.com/in/sivasundarsrisailapu/" target="_blank" class="btn-download-cv">
+              LinkedIn Profile
+              <span class="cv-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#161412" stroke-width="3">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Showcase Section -->
+  <section id="projects" class="projects-section">
+    <div class="projects-container">
+      <div class="projects-top-bar">
+        <div class="projects-title-area">
+          <div class="services-subbadge">
+            <span class="badge-icon-dark"></span>
+            <span class="badge-icon-orange"></span>
+            <span>Portfolio Showcase</span>
+          </div>
+          <h2 class="projects-heading">
+            Featured <span class="highlight-orange">Projects</span>
+          </h2>
+        </div>
+
+        <div class="projects-top-controls">
+          <div class="slider-arrows">
+            <button class="slider-arrow-btn" id="projPrevBtn" aria-label="Previous Project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="slider-arrow-btn" id="projNextBtn" aria-label="Next Project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <a href="https://github.com/" target="_blank" class="projects-orange-cta">
+            <span>View All Projects</span>
+            <span class="cta-arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="projects-folder-grid" id="projectsFolderGrid">
+
+        <!-- Folder 1: Telugu Anime Database -->
+        <a href="https://www.instagram.com/" target="_blank" class="os-folder-item">
+          <div class="os-folder-icon">
+            <div class="folder-back"></div>
+            <div class="folder-paper-file">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="folder-front"></div>
+          </div>
+          <span class="os-folder-name">Telugu Anime Database</span>
+        </a>
+
+        <!-- Folder 2: Resume Portfolio -->
+        <a href="resume.html" target="_blank" class="os-folder-item">
+          <div class="os-folder-icon">
+            <div class="folder-back"></div>
+            <div class="folder-paper-file">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="folder-front"></div>
+          </div>
+          <span class="os-folder-name">Portfolio Website</span>
+        </a>
+
+        <!-- Folder 3: Graphic Design & Branding -->
+        <a href="https://www.behance.net/" target="_blank" class="os-folder-item">
+          <div class="os-folder-icon">
+            <div class="folder-back"></div>
+            <div class="folder-paper-file">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              </svg>
+            </div>
+            <div class="folder-front"></div>
+          </div>
+          <span class="os-folder-name">Graphic & Branding</span>
+        </a>
+
+        <!-- Folder 4: Video Editing & Shorts -->
+        <a href="https://www.youtube.com/" target="_blank" class="os-folder-item">
+          <div class="os-folder-icon">
+            <div class="folder-back"></div>
+            <div class="folder-paper-file">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <div class="folder-front"></div>
+          </div>
+          <span class="os-folder-name">Video Editing & Reels</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education & Work Journey Section -->
+  <section id="journey" class="journey-section">
+    <div class="journey-container">
+      <div class="journey-header text-center">
+        <div class="services-subbadge">
+          <span class="badge-icon-dark"></span>
+          <span class="badge-icon-orange"></span>
+          <span>Experience & Education</span>
+        </div>
+        <h2 class="journey-heading">
+          My Academic and <span class="highlight-orange">Professional</span> Journey
+        </h2>
+      </div>
+
+      <div class="split-journey-grid">
+
+        <!-- Column 1: Education (Left Side) -->
+        <div class="split-card-column">
+          <div class="split-column-header">
+            <div class="split-header-badge orange-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Education</span>
+            </div>
+          </div>
+
+          <div class="split-card-list">
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Bachelor of Arts (B.A.)</h4>
+                <span class="split-year-tag active-tag">2025 – Present</span>
+              </div>
+              <p class="split-card-sub">Undergraduate Degree Program</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Intermediate Education</h4>
+                <span class="split-year-tag">2023</span>
+              </div>
+              <p class="split-card-sub">A.P.O.S. Senior Secondary</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Diploma — Mechanical</h4>
+                <span class="split-year-tag">2017 – 2020</span>
+              </div>
+              <p class="split-card-sub">Sai Ganapathi Polytechnic, Visakhapatnam</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Secondary School (SSC)</h4>
+                <span class="split-year-tag">2017</span>
+              </div>
+              <p class="split-card-sub">Gurus High School, Visakhapatnam</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Work Experience (Right Side) -->
+        <div class="split-card-column">
+          <div class="split-column-header">
+            <div class="split-header-badge dark-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>Work Experience</span>
+            </div>
+          </div>
+
+          <div class="split-card-list">
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Graphic Designer & Video Editor</h4>
+                <span class="split-year-tag active-tag">2026</span>
+              </div>
+              <p class="split-card-sub">SHM Technologies (Intern)</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>WNS (Capgemini)</h4>
+                <span class="split-year-tag">2025</span>
+              </div>
+              <p class="split-card-sub">Associate — Data & Documentation</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Tech Mahindra</h4>
+                <span class="split-year-tag">2024</span>
+              </div>
+              <p class="split-card-sub">Associate — Operations & Process Support</p>
+            </div>
+
+            <div class="split-item-card">
+              <div class="split-card-top">
+                <h4>Telugu Anime Database</h4>
+                <span class="split-year-tag active-tag">2024 – Present</span>
+              </div>
+              <p class="split-card-sub">Founder & Content Creator (TADB)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement Awards Section -->
+  <section id="awards" class="awards-dark-section">
+    <div class="awards-container">
+      <div class="awards-grid">
+        <div class="awards-left-info">
+          <div class="services-subbadge subbadge-light">
+            <span class="badge-icon-dark"></span>
+            <span class="badge-icon-orange"></span>
+            <span>Milestones & Highlights</span>
+          </div>
+
+          <h2 class="awards-heading">
+            My Creative <span class="highlight-orange">Milestones</span>
+          </h2>
+          
+          <p class="awards-desc-p">
+            Recognized for building digital platforms, creating viral social media reels, and delivering quality graphic designs.
+          </p>
+
+          <div class="awards-slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="awards-right-cards">
+          <div class="award-card">
+            <span class="award-number">01.</span>
+            <div class="laurel-wreath-emblem">
+              <div class="award-stars">★★★★★</div>
+              <h4 class="emblem-title">1,000+ DOWNLOADS</h4>
+              <span class="emblem-year">2024</span>
+            </div>
+            <h3 class="award-title">TADB Android App</h3>
+            <p class="award-desc">Achieved 1,000+ downloads on Google Play Store for Telugu Anime Database app.</p>
+          </div>
+
+          <div class="award-card">
+            <span class="award-number">02.</span>
+            <div class="laurel-wreath-emblem">
+              <div class="award-stars">★★★★★</div>
+              <h4 class="emblem-title">BGMI REEL CAMPAIGN</h4>
+              <span class="emblem-year">2026</span>
+            </div>
+            <h3 class="award-title">BGMI Promo Reel</h3>
+            <p class="award-desc">High-energy promotional video reel campaign with custom voiceover & CapCut audio sync.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Favorite Tools Section -->
+  <section id="tools" class="tools-section">
+    <div class="tools-container">
+      <div class="tools-header text-center">
+        <div class="services-subbadge">
+          <span class="badge-icon-dark"></span>
+          <span class="badge-icon-orange"></span>
+          <span>My Creative Toolkit</span>
+        </div>
+        <h2 class="tools-heading">
+          Exploring the <span class="highlight-orange">Tools</span> Behind My Designs
+        </h2>
+      </div>
+
+      <div class="theme-tools-grid">
+
+        <!-- Photoshop Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon ps-theme-icon">Ps</div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">Adobe Photoshop</h3>
+              <span class="theme-tool-desc">Poster Design & Manipulation</span>
+            </div>
+            <span class="theme-pct-pill">98%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill ps-theme-fill" style="width: 98%;"></div>
+          </div>
+        </div>
+
+        <!-- Illustrator Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon ai-theme-icon">Ai</div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">Adobe Illustrator</h3>
+              <span class="theme-tool-desc">Vector Art & Branding</span>
+            </div>
+            <span class="theme-pct-pill">92%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill ai-theme-fill" style="width: 92%;"></div>
+          </div>
+        </div>
+
+        <!-- Figma Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon figma-theme-icon">
+              <svg width="20" height="20" viewBox="0 0 38 57" fill="none">
+                <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38H19V28.5Z" fill="#FF7262"/>
+                <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#1ABCFE"/>
+                <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+              </svg>
+            </div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">Figma</h3>
+              <span class="theme-tool-desc">UI/UX & Web Layouts</span>
+            </div>
+            <span class="theme-pct-pill">95%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill figma-theme-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <!-- CapCut Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon capcut-theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M4 8l16 0M4 16l16 0" stroke="#FFFFFF"/>
+                <path d="M9 4l6 16M15 4l-6 16" stroke="#00E5FF"/>
+              </svg>
+            </div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">CapCut Video Editor</h3>
+              <span class="theme-tool-desc">Shorts & Reels Editing</span>
+            </div>
+            <span class="theme-pct-pill">95%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill capcut-theme-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <!-- Premiere Pro Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon pr-theme-icon">Pr</div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">Premiere Pro</h3>
+              <span class="theme-tool-desc">Video Timeline Editing</span>
+            </div>
+            <span class="theme-pct-pill">90%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill pr-theme-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- After Effects Card -->
+        <div class="theme-tool-card">
+          <div class="theme-card-top">
+            <div class="theme-tool-icon ae-theme-icon">Ae</div>
+            <div class="theme-tool-meta">
+              <h3 class="theme-tool-title">After Effects</h3>
+              <span class="theme-tool-desc">Motion Graphics & FX</span>
+            </div>
+            <span class="theme-pct-pill">88%</span>
+          </div>
+          <div class="theme-bar-track">
+            <div class="theme-bar-fill ae-theme-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media & Footer Section -->
+  <footer id="socials" class="footer-section">
+    <div class="footer-container">
+      
+      <div class="footer-cta-header">
+        <div class="social-section-badge">
+          <span class="social-badge-dot"></span>
+          GET IN TOUCH
+        </div>
+        
+        <h2 class="footer-heading">
+          Let’s Connect & <span class="highlight-orange">Collaborate</span>
+        </h2>
+        
+        <p class="footer-subheading">
+          Feel free to reach out for projects, collaborations, or just a quick chat!
+        </p>
+
+        <div class="social-hero-pills">
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/" target="_blank" class="social-hero-btn youtube-btn" title="YouTube Channel">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span class="social-label">YouTube</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/" target="_blank" class="social-hero-btn insta-btn" title="Instagram (TADB)">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span class="social-label">Instagram</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/sivasundarsrisailapu/" target="_blank" class="social-hero-btn linkedin-btn" title="LinkedIn Profile">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+            <span class="social-label">LinkedIn</span>
+          </a>
+
+          <!-- Behance -->
+          <a href="https://www.behance.net/" target="_blank" class="social-hero-btn behance-btn" title="Behance Portfolio">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-1.646 2.382-3.374 2.382-2.529 0-3.743-1.874-3.743-4.225 0-2.457 1.322-4.329 3.655-4.329 2.459 0 3.39 1.836 3.242 4.172h-4.992c.046.993.633 1.764 1.758 1.764.873 0 1.364-.401 1.621-1.047l1.833 1.283zm-3.805-4.048c.048-.71-.475-1.477-1.352-1.477-.872 0-1.431.748-1.492 1.477h2.844zM11.666 11.235c.783.567 1.234 1.411 1.234 2.502 0 2.483-1.874 3.763-4.577 3.763H2V6.5h6.059c2.518 0 4.195 1.135 4.195 3.109 0 1.009-.494 1.777-1.303 2.164zm-3.89-2.735H4.808v2.091H7.77c.883 0 1.542-.39 1.542-1.045 0-.678-.659-1.046-1.536-1.046zm.308 4.256H4.808v2.368h3.306c.997 0 1.716-.43 1.716-1.184 0-.756-.719-1.184-1.746-1.184z"/>
+            </svg>
+            <span class="social-label">Behance</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:sivasundarsrisailapu2000@gmail.com" class="social-hero-btn email-btn" title="Send Email">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span class="social-label">Email</span>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- Bottom Copyright Dark Bar -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-container">
+        <p class="copyright-text">Copyright © 2026 <span class="highlight-orange-text">Siva Sundar.</span> All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
