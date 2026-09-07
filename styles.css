@@ -11,7 +11,7 @@
   --text-main: #161412;
   --text-muted: #5C564C;
   --navbar-bg: #161412;
-  --accent-orange: #F5961D;
+  --accent-orange: #D4E11E;
   --cta-bg: #FAF7F0;
   --cta-text: #161412;
   --card-bg: #FFFFFF;
@@ -24,7 +24,7 @@ body.dark-mode {
   --text-main: #F4F0E8;
   --text-muted: #A39D93;
   --navbar-bg: #1C1917;
-  --accent-orange: #FF9F1C;
+  --accent-orange: #D4E11E;
   --cta-bg: #F4F0E8;
   --cta-text: #161412;
   --card-bg: #1A1816;
@@ -742,6 +742,9 @@ body.dark-mode .service-card { background-color: #1C1917; }
 
 .about-portrait-img {
   position: relative; width: 360px; height: 440px; object-fit: cover; object-position: top center; z-index: 2; border-radius: 0 0 24px 24px;
+  filter: drop-shadow(1.5px 0 0 rgba(255, 255, 255, 0.85)) drop-shadow(-1.5px 0 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 -1.5px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 88%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 88%, rgba(0, 0, 0, 0) 100%);
 }
 
 .about-skills-row {
@@ -1664,12 +1667,11 @@ body.dark-mode .folder-tag {
   }
 
   .portrait-wrapper { 
-    width: 320px; 
-    height: 360px; 
-    margin: 15px auto 0 auto;
+    width: 280px; 
+    height: 340px; 
+    margin: 10px auto 0 auto;
     position: relative;
-    display: flex;
-    justify-content: center;
+    overflow: visible;
   }
   
   .arch-backdrop { 
@@ -1677,37 +1679,37 @@ body.dark-mode .folder-tag {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px; 
-    height: 310px; 
-    border-radius: 125px 125px 24px 24px;
+    width: 240px; 
+    height: 300px; 
+    border-radius: 120px 120px 24px 24px;
     z-index: 1;
   }
-
-
 
   .portrait-img {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px; 
-    height: 330px; 
-    border-radius: 125px 125px 24px 24px;
-    z-index: 2;
+    width: 240px; 
+    height: 320px; 
+    border-radius: 120px 120px 24px 24px;
+    z-index: 3;
   }
 
   .mobile-skills-row {
-    display: none; /* Hide container wrapper on mobile so individual pills float around arch */
+    display: none;
   }
 
-  /* Clean floating authentic app icons around centered arch portrait */
+  /* Perfectly centered spinning halo ring behind mobile portrait head */
   .icons-halo-ring {
-    top: -10px;
-    left: 50%;
+    position: absolute;
+    top: 0px;
+    left: 18%;
     transform: translateX(-50%);
     margin-left: 0;
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
+    z-index: 2;
   }
 
   .app-icon {
@@ -1717,17 +1719,17 @@ body.dark-mode .folder-tag {
     font-size: 0.85rem;
   }
 
-  /* Mobile circular radius distribution (110px radius centered around portrait head) */
-  .badge-pos-1 { transform: rotate(0deg) translate(110px) rotate(0deg); }
-  .badge-pos-2 { transform: rotate(51.4deg) translate(110px) rotate(-51.4deg); }
-  .badge-pos-3 { transform: rotate(102.8deg) translate(110px) rotate(-102.8deg); }
-  .badge-pos-4 { transform: rotate(154.2deg) translate(110px) rotate(-154.2deg); }
-  .badge-pos-5 { transform: rotate(205.6deg) translate(110px) rotate(-205.6deg); }
-  .badge-pos-6 { transform: rotate(257deg) translate(110px) rotate(-257deg); }
-  .badge-pos-7 { transform: rotate(308.4deg) translate(110px) rotate(-308.4deg); }
+  /* Mobile circular radius distribution (105px radius) */
+  .badge-pos-1 { transform: rotate(0deg) translate(105px) rotate(0deg); }
+  .badge-pos-2 { transform: rotate(51.4deg) translate(105px) rotate(-51.4deg); }
+  .badge-pos-3 { transform: rotate(102.8deg) translate(105px) rotate(-102.8deg); }
+  .badge-pos-4 { transform: rotate(154.2deg) translate(105px) rotate(-154.2deg); }
+  .badge-pos-5 { transform: rotate(205.6deg) translate(105px) rotate(-205.6deg); }
+  .badge-pos-6 { transform: rotate(257deg) translate(105px) rotate(-257deg); }
+  .badge-pos-7 { transform: rotate(308.4deg) translate(105px) rotate(-308.4deg); }
 
   .hire-me-stamp { 
-    display: none !important; /* Hide circular stamp on mobile viewports */
+    display: none !important;
   }
 
   .hero-action-pill {
@@ -1856,8 +1858,11 @@ body.dark-mode .folder-tag {
   .awards-heading { font-size: 2.3rem; }
 
   /* Tools Grid Mobile */
-  .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .tools-section { padding: 60px 20px; }
+  .tools-grid, .theme-tools-grid { grid-template-columns: 1fr; gap: 16px; }
   .tools-heading { font-size: 2.2rem; }
+  .theme-tool-card { padding: 18px 20px; }
+  .theme-tool-title { font-size: 1.05rem; }
 
   /* Footer Mobile */
   .footer-heading { font-size: 2.4rem; }
@@ -1866,15 +1871,15 @@ body.dark-mode .folder-tag {
 }
 
 @media (max-width: 480px) {
-  .navbar-wrapper { padding: 0; top: 0; }
-  .navbar { padding: 8px 10px; gap: 4px; border-radius: 0; }
-  .logo-badge { width: 28px; height: 28px; }
-  .nav-links { gap: 1px; }
-  .nav-item { padding: 5px 6px; font-size: 0.72rem; }
-  .nav-item.active { padding: 5px 8px; }
-  .nav-item.active .nav-text { max-width: 54px; }
-  .nav-icon { width: 14px; height: 14px; }
-  .theme-toggle { width: 28px; height: 28px; }
+  .navbar-wrapper { padding: 0 4px; top: 8px; }
+  .navbar { padding: 10px 14px; gap: 8px; border-radius: 999px; }
+  .logo-badge { width: 32px; height: 32px; }
+  .nav-links { gap: 4px; }
+  .nav-item { padding: 8px 10px; font-size: 0.85rem; }
+  .nav-item.active { padding: 8px 14px; }
+  .nav-item.active .nav-text { max-width: 70px; }
+  .nav-icon { width: 18px; height: 18px; }
+  .theme-toggle { width: 34px; height: 34px; font-size: 0.95rem; }
 
   .hero-heading { font-size: 2.1rem; }
   .pill-badge { font-size: 0.65rem; padding: 5px 10px; }
