@@ -31,6 +31,11 @@ body.dark-mode {
   --border-color: rgba(255, 255, 255, 0.08);
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg-color);
@@ -38,7 +43,6 @@ body {
   line-height: 1.5;
   transition: background-color 0.3s ease, color 0.3s ease;
   min-height: 100vh;
-  overflow-x: hidden;
 
   /* Graph paper grid background */
   background-image: 
@@ -1698,28 +1702,29 @@ body.dark-mode .folder-tag {
 
   /* Clean floating authentic app icons around centered arch portrait */
   .icons-halo-ring {
-    top: 0px;
-    left: 55%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
     width: 250px;
     height: 250px;
-    margin-left: -125px;
   }
 
   .app-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    font-size: 0.95rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    font-size: 0.85rem;
   }
 
-  /* Mobile circular radius distribution (115px radius) */
-  .badge-pos-1 { transform: rotate(0deg) translate(115px) rotate(0deg); }
-  .badge-pos-2 { transform: rotate(51.4deg) translate(115px) rotate(-51.4deg); }
-  .badge-pos-3 { transform: rotate(102.8deg) translate(115px) rotate(-102.8deg); }
-  .badge-pos-4 { transform: rotate(154.2deg) translate(115px) rotate(-154.2deg); }
-  .badge-pos-5 { transform: rotate(205.6deg) translate(115px) rotate(-205.6deg); }
-  .badge-pos-6 { transform: rotate(257deg) translate(115px) rotate(-257deg); }
-  .badge-pos-7 { transform: rotate(308.4deg) translate(115px) rotate(-308.4deg); }
+  /* Mobile circular radius distribution (110px radius centered around portrait head) */
+  .badge-pos-1 { transform: rotate(0deg) translate(110px) rotate(0deg); }
+  .badge-pos-2 { transform: rotate(51.4deg) translate(110px) rotate(-51.4deg); }
+  .badge-pos-3 { transform: rotate(102.8deg) translate(110px) rotate(-102.8deg); }
+  .badge-pos-4 { transform: rotate(154.2deg) translate(110px) rotate(-154.2deg); }
+  .badge-pos-5 { transform: rotate(205.6deg) translate(110px) rotate(-205.6deg); }
+  .badge-pos-6 { transform: rotate(257deg) translate(110px) rotate(-257deg); }
+  .badge-pos-7 { transform: rotate(308.4deg) translate(110px) rotate(-308.4deg); }
 
   .hire-me-stamp { 
     display: none !important; /* Hide circular stamp on mobile viewports */
@@ -1872,8 +1877,6 @@ body.dark-mode .folder-tag {
   .theme-toggle { width: 28px; height: 28px; }
 
   .hero-heading { font-size: 2.1rem; }
-  .portrait-wrapper { max-width: 320px; height: 210px; }
-  .arch-backdrop, .portrait-img { width: 140px; height: 200px; }
   .pill-badge { font-size: 0.65rem; padding: 5px 10px; }
   
   .tools-grid { grid-template-columns: 1fr; }
